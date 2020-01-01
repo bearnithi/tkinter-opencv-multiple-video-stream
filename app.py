@@ -30,6 +30,15 @@ class App:
         self.canvasBack = tkinter.Canvas(self.ctr_right, width = self.vidLeft.width, height = self.vidLeft.height)
         login.Login().loginUI(self.ctr_end)
         settings.Settings(self.ctr_end)
+
+        self.ctr_end.columnconfigure(0, weight = 1)
+        # self.ctr_end.columnconfigure(1, weight = 1)
+        # self.ctr_end.columnconfigure(2, weight = 1)
+        # self.ctr_end.columnconfigure(3, weight = 1)
+        # self.ctr_end.columnconfigure(4, weight = 1)
+
+        
+
         self.canvasLeft.pack()
         self.canvasRight.pack()
         self.canvasBack.pack()
